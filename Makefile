@@ -1,12 +1,12 @@
 ifeq ($(OS), Windows_NT)
 	MKD := cmd /C mkdir
-	TARGET := libfib.dll
+	TARGET := libex.dll
 else
 	MKD := mkdir -p
-	TARGET := libfib.so
+	TARGET := libex.so
 endif
 
 .PHONY: build
 build:
 	$(MKD) build
-	nim c --app:lib -d:release -o:build/$(TARGET) src/fib.nim
+	nim c --app:lib -d:release -o:build/$(TARGET) src/example.nim

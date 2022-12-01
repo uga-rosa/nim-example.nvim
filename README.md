@@ -13,5 +13,5 @@ Plug 'uga-rosa/nim-example.nvim' { 'do': 'make' }
 # Usage
 
 ```vim
-:Fib 42
+:NimAckermann 4 1
 ```
